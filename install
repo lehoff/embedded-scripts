@@ -1,0 +1,5 @@
+#!/bin/bash
+# args:
+# $1: the destination directiory
+cat files.txt | xargs -I% cp % $1
+cat files.txt >> $1/.gitignore
